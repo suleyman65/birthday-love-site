@@ -200,3 +200,26 @@ function startExperience(){
   .style.display = "none";
 
 }
+const overlayMusic =
+document.getElementById("musicOverlay");
+
+function startExperience(){
+
+  const music =
+  document.getElementById("bgMusic");
+
+  music.play();
+
+  document
+  .getElementById("musicBtn")
+  .innerHTML = "Ⅱ";
+
+  overlayMusic.style.opacity = "0";
+
+  setTimeout(()=>{
+
+    overlayMusic.style.display = "none";
+
+  },600);
+
+}
