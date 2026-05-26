@@ -587,3 +587,43 @@ transition:.5s;
     opacity:1;
   }
 }
+
+.music-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.92);
+  backdrop-filter:blur(10px);
+  z-index:999999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.music-popup{
+  text-align:center;
+  padding:40px;
+  border-radius:30px;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);
+  width:min(90%,400px);
+}
+
+.music-popup h2{
+  font-size:70px;
+}
+
+.music-popup p{
+  margin-top:15px;
+  color:#ddd;
+  line-height:1.8;
+}
+
+.music-popup button{
+  margin-top:25px;
+  border:none;
+  padding:15px 30px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#ffd27d,#fff0c7);
+  font-weight:800;
+  cursor:pointer;
+}
