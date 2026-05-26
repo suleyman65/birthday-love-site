@@ -186,3 +186,17 @@ fullscreen.addEventListener("click",()=>{
   fullscreen.classList.remove("show");
 
 });
+
+function startExperience(){
+
+  music.play();
+
+  playing = true;
+
+  musicBtn.innerHTML = "Ⅱ";
+
+  document
+  .getElementById("musicOverlay")
+  .style.display = "none";
+
+}
