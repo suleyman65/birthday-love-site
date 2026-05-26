@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İyi ki Doğdun Aşkım</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader" id="loader">
+  <div>
+    <span>Senin için hazırlanıyor...</span>
+    <h1>Bir aşk hikayesi</h1>
+  </div>
+</div>
+
+<div class="cursor-light"></div>
+<div class="stars" id="stars"></div>
+<div class="hearts" id="hearts"></div>
+
+<audio id="bgMusic" loop autoplay>
+  <source src="Diyar-Gula-Min.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()" id="musicBtn">♪</button>
+
+<header class="hero">
+  <div class="hero-glass reveal">
+    <span class="eyebrow">Uzakta olsam da kalbim yanında</span>
+    <h1>İyi ki Doğdun</h1>
+    <h2>Benim güzel sevgilim</h2>
+    <p id="typingText"></p>
+
+    <div class="buttons">
+      <a href="#story" class="btn">Hikayemize Başla</a>
+      <a href="#cake" class="btn ghost">Pastayı Gör 🎂</a>
+    </div>
+  </div>
+</header>
+
+<section id="story" class="section">
+  <div class="section-title reveal">
+    <span>Bizim Hikayemiz</span>
+    <h2>Mesafeye rağmen aynı kalpteyiz</h2>
+  </div>
+
+  <div class="cinema-grid">
+    <div class="cinema-card reveal">
+      <img src="1.foto.jpeg" alt="">
+      <div class="card-text">
+        <h3>İlk Gülüşün</h3>
+        <p>Bir gülüş bazen insanın bütün gününü, bazen de bütün hayatını güzelleştirir.</p>
+      </div>
+    </div>
+
+    <div class="cinema-card reveal">
+      <img src="WhatsApp Image 2026-05-26 at 21.28.36.jpeg" alt="">
+      <div class="card-text">
+        <h3>En Güzel Anılar</h3>
+        <p>Yan yana olduğumuz her an, kalbimde sakladığım özel bir sahne gibi.</p>
+      </div>
+    </div>
+
+    <div class="cinema-card reveal">
+      <img src="3.foto.jpeg" alt="">
+      <div class="card-text">
+        <h3>Uzakta Bile Biz</h3>
+        <p>Mesafeler bizi eksiltmez; sadece kavuşacağımız günü daha değerli yapar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="love-section section">
+  <div class="love-box reveal">
+    <span id="daysTogether">428</span>
+    <p>gündür kalbim seninle atıyor</p>
+  </div>
+</section>
+
+<section id="cake" class="section cake-section">
+  <div class="section-title reveal">
+    <span>Küçük Bir Sürpriz</span>
+    <h2>Pastanın Mumunu Üfle</h2>
+  </div>
+
+  <div class="cake reveal" id="cakeBox">
+    <div class="plate"></div>
+    <div class="cake-bottom"></div>
+    <div class="cake-middle"></div>
+    <div class="cake-top"></div>
+    <div class="icing"></div>
+    <div class="candle"></div>
+    <div class="flame"></div>
+  </div>
+
+  <button class="btn reveal" onclick="blowCandle()">Dilek Tut ve Üfle 🕯️</button>
+
+  <div class="wish reveal" id="wishText">
+    <h2>Dileğin kabul olsun aşkım ✨</h2>
+    <p>Benim en büyük dileğim; bir sonraki doğum gününde sana gerçekten sarılabilmek.</p>
+  </div>
+</section>
+
+<section class="letter-section section">
+  <div class="letter reveal">
+    <span>Sadece sana</span>
+    <h2>Sana Bir Mektubum Var</h2>
+    <p>
+      Aşkım, bugün yanında olamamak içimde buruk bir his bırakıyor.
+      Ama şunu bilmeni istiyorum; nerede olursam olayım, kalbimin en güzel yeri hep sana ait.
+    </p>
+    <p>
+      Sen benim huzurum, heyecanım, sabrım ve geleceğe dair en güzel hayalimsin.
+      Bu sayfanın her parçasına seni ne kadar sevdiğimi sakladım.
+    </p>
+    <p>
+      İyi ki doğdun güzel sevgilim. İyi ki varsın. Seni çok seviyorum.
+    </p>
+  </div>
+</section>
+
+<section class="final section">
+  <div class="final-box reveal">
+    <h2>Seni çok seviyorum ❤️</h2>
+    <p>Bu site küçük bir hediye ama içindeki sevgi gerçek.</p>
+    <button class="btn" onclick="showFinal()">Son Sürprizi Aç</button>
+
+    <div class="final-message" id="finalMessage">
+      Senin doğduğun gün, benim en güzel hikayemin başlangıcı olmuş.
+      Nice yaşlarına aşkım; birlikte, el ele, yan yana.
+    </div>
+  </div>
+</section>
+<div class="fullscreen-image" id="fullscreenImage">
+
+  <img id="fullscreenImg">
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
